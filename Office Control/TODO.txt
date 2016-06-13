@@ -1,0 +1,1 @@
+- Show phone keyboard on active input in messages
