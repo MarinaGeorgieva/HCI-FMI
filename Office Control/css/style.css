@@ -171,7 +171,7 @@ a.menuIcon {
     font-size: 1.4em;
 }
 
-.defaultTable td.folder {
+.defaultTable td.arrow {
     background: url("../img/icon-arrow.png") no-repeat center right 5px;
     background-size: 38px;
 }
@@ -185,6 +185,12 @@ a.menuIcon {
     line-height: 3em;
     padding: 0 40px 0 12px;
     display: inline-block;
+}
+
+.defaultTable td a.multiLine {
+    line-height: 1.2em;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .defaultTable--msg td {
