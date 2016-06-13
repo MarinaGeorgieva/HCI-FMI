@@ -380,3 +380,7 @@ a.bigBtn--orange {
     border-color: #8b4d0a;
     color: #eee;
 }
+
+.popover {
+    color: black;
+}
