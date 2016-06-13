@@ -275,8 +275,8 @@ span.messagePreview {
     width: 100%;
     padding: 5px 10px;
     font-size: 1.2em;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 .message.left .message__bulb{
@@ -355,8 +355,8 @@ a.bigBtn {
     font-size: 1.2em;
     font-weight: bold;
     padding: 8px 32px;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 a.bigBtn--dark {
