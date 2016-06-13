@@ -129,8 +129,7 @@ a:hover {
 }
 
 #main {
-    position: relative;
-    top: 60px;
+    padding-top: 60px;
     height: calc(100% - 60px);
     overflow-y: scroll;
     z-index: 2;
