@@ -397,8 +397,19 @@ a.bigBtn--orange {
 
 .popover.bottom>.arrow {
     top: -10px!important;
-    left: 91%!important;
+    left: auto!important;
+    right: 25px!important;
     margin-left: 0;
     border-top-color: transparent;
     border-bottom-color: transparent;
+}
+
+
+.popover.bottom>.arrow:after {
+    margin-left: 0!important;
+}
+
+.popover-content {
+    height: 200px!important;
+    overflow: scroll;
 }
