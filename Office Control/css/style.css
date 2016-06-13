@@ -219,7 +219,11 @@ span.messagePreview {
 }
 
 .modal-dialog {
-    margin-top: 50%;
+    position: absolute;
+    top: 27%;
+    left: 0;
+    right: 0;
+    margin: 0 5%;
 }
 
 .message {
