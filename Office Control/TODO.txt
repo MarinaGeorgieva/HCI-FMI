@@ -1,1 +1,2 @@
 - Show phone keyboard on active input in messages
+- When notification icon is clicked the <span class="notification">1</span> should disappear
