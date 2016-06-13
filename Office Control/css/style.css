@@ -135,8 +135,12 @@ a:hover {
     z-index: 2;
 }
 
-.mainMessage {
+.bottomFixMessage {
     padding-bottom: 54px;
+}
+
+.bottomFixMeetingsEvents {
+    padding-bottom: 42px;
 }
 
 .menu {
@@ -301,4 +305,46 @@ span.messagePreview {
     padding-left: 18px;
     display: block;
     font-size: 1.4em;
+}
+
+.meetingActions {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    background: rgba(240, 240, 240, 0.9);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    -webkit-justify-content: space-between;
+    /* Safari */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meetingActions a {
+    margin: 0 24px;
+}
+
+a.bigBtn {
+    display: block;
+    background: #fff;
+    border: 2px solid #111;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+a.bigBtn--dark {
+    background: #222;
+    color: #eee;
+}
+
+a.bigBtn--green {
+    background: #87d42c;
+    border-color: #5c9815;
 }
