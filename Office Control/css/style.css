@@ -205,3 +205,7 @@ span.messagePreview {
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+.modal-dialog {
+    margin-top: 50%;
+}
