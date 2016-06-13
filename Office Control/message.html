@@ -2,11 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>Messages</title>
+    <title>Message</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" xmlns="">
+    <link rel="stylesheet" href="lib/bootstrap-3.2.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap-3.2.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -23,12 +25,58 @@
             </div>
         </div>
     </div>
-    <div id="main">
-        <div class="message received">
-
+    <div id="main" class="mainMessage clear">
+        <div class="message right">
+            <span class="message__date">Tuesday 10:05</span>
+            <div class="message__bulb">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia earum soluta illo optio nobis in.
+            </div>
         </div>
-        <div class="message sent"
+        <div class="message left">
+            <span class="message__date">Tuesday 11:34</span>
+            <div class="message__bulb">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nulla doloremque quod earum nisi. Dolorem expedita cum alias a molestias.
+            </div>
+        </div>
+        <div class="message right">
+            <span class="message__date">Tuesday 18:05</span>
+            <div class="message__bulb">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia earum soluta illo optio nobis in.
+            </div>
+        </div>
+        <div class="message right">
+            <span class="message__date">Tuesday 18:08</span>
+            <div class="message__bulb">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia earum soluta illo optio nobis in.
+            </div>
+        </div>
+        <div class="message left">
+            <span class="message__date">Wednesday 14:34</span>
+            <div class="message__bulb">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nulla doloremque quod earum nisi. Dolorem expedita cum alias a molestias.
+            </div>
+        </div>
+        <div class="message right">
+            <span class="message__date">Wednesday 18:10</span>
+            <div class="message__bulb">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia earum soluta illo optio nobis in.
+            </div>
+        </div>
+        <div class="message left">
+            <span class="message__date">Wednesday 18:30</span>
+            <div class="message__bulb">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat nulla doloremque quod earum nisi. Dolorem expedita cum alias a molestias.
+            </div>
+        </div>
+        <div class="messageSend clear">
+			<input type="text" placeholder="Text Message" />
+			<input type="submit" value="Send" />
+        </div>
     </div>
+    <script type="text/javascript">
+    	var objDiv = document.getElementById("main");
+		objDiv.scrollTop = objDiv.scrollHeight;
+    </script>
 </body>
 
 </html>

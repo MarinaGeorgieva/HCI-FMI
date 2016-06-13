@@ -128,6 +128,10 @@ a:hover {
     z-index: 2;
 }
 
+.mainMessage {
+    padding-bottom: 54px;
+}
+
 .menu {
     display: -webkit-flex;
     /* Safari */
@@ -204,4 +208,76 @@ span.messagePreview {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+}
+
+.message {
+    width: 90%;
+    margin: 10px;
+}
+
+.message__date {
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+    padding: 0 10px 5px;
+}
+
+.message.right .message__date {
+    text-align: right;
+}
+
+.message__bulb {
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 1.2em;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+.message.left .message__bulb{
+    background-color: rgba(78, 170, 245, 0.8);
+}
+
+.message.right .message__bulb{
+    background-color: rgba(236, 192, 16, 0.8);
+}
+
+.message.left {
+    float: left;
+}
+
+.message.right {
+    float: right;
+}
+
+.messageSend {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    background: rgba(240, 240, 240, 0.9);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.messageSend input[type="text"] {
+    width: 80%;
+    float: left;
+    display: block;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    font-size: 1.1em;
+    padding: 4px 12px;
+}
+
+.messageSend input[type="submit"] {
+    width: 20%;
+    float: left;
+    background: transparent;
+    border: none;
+    color: #003366;
+    font-weight: bold;
+    padding-left: 18px;
+    display: block;
+    font-size: 1.4em;
 }
