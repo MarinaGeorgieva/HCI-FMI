@@ -73,6 +73,10 @@ a:hover {
     background: rgba(82, 153, 8, 0.8);
 }
 
+.topLine--red {
+    background: rgba(184, 34, 0, 0.8);
+}
+
 .topLine__left {
     float: left;
     width: 35%;
@@ -344,11 +348,11 @@ span.messagePreview {
     justify-content: center;
 }
 
-.meetingActions a {
-    margin: 0 24px;
+.meetingActions a, .meetingActions input {
+    margin: 0 6%;
 }
 
-a.bigBtn {
+a.bigBtn, input.bigBtn {
     display: block;
     background: #fff;
     border: 2px solid #111;
@@ -359,7 +363,7 @@ a.bigBtn {
     -webkit-border-radius: 10px;
 }
 
-a.bigBtn--dark {
+a.bigBtn--dark, input.bigBtn--dark {
     background: #222;
     color: #eee;
 }
@@ -379,6 +383,51 @@ a.bigBtn--orange {
     background: #b0600a;
     border-color: #8b4d0a;
     color: #eee;
+}
+
+a.bigBtn--red, input.bigBtn--red {
+    background: #b93213;
+    border-color: #95250c;
+    color: #eee;
+}
+
+form.leave {
+	padding: 12px;
+}
+
+form.leave > input, form.leave select, form.leave textarea {
+	display: block;
+	width: 100%;
+	line-height: 28px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border: 1px solid #aaa;
+	padding: 0 8px;
+}
+
+form.leave textarea {
+	resize: none;
+	line-height: 22px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+form.leave input[type="date"] {
+	width: 40%;
+}
+
+form.leave label {
+	margin-top: 10px;
+	font-size: 1.2em;
+}
+
+form.leave select {
+	min-height: 36px;
+}
+
+.vacationLeft {
+	color: #888;
+	font-weight: bold;
 }
 
 .popover {
