@@ -14,7 +14,7 @@ body {
     background-size: cover;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
     color: #333;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 *,
@@ -25,7 +25,7 @@ body {
 
 a {
     color: #111;
-    text-decoration: none;
+    text-decoration: none !important;
     transition-property: color;
     transition-duration: .7s;
 }
