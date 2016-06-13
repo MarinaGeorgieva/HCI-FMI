@@ -102,6 +102,14 @@ a:hover {
     background-image: url("../img/icon-settings.png");
 }
 
+.topLine__icon--trash {
+    background-image: url("../img/icon-trash.png");
+}
+
+.topLine__icon--write {
+    background-image: url("../img/icon-write.png");
+}
+
 .topLine__icon a {
     display: block;
     width: 100%;
