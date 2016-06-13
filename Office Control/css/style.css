@@ -129,15 +129,18 @@ a:hover {
 }
 
 #main {
-    position: relative;
-    top: 60px;
-    height: calc(100% - 60px);
+    padding-top: 60px;
+    height: 100%;
     overflow-y: scroll;
     z-index: 2;
 }
 
-.mainMessage {
+.bottomFixMessage {
     padding-bottom: 54px;
+}
+
+.bottomFixMeetingsEvents {
+    padding-bottom: 66px;
 }
 
 .menu {
@@ -172,7 +175,7 @@ a.menuIcon {
     font-size: 1.4em;
 }
 
-.defaultTable td.folder {
+.defaultTable td.arrow {
     background: url("../img/icon-arrow.png") no-repeat center right 5px;
     background-size: 38px;
 }
@@ -186,6 +189,12 @@ a.menuIcon {
     line-height: 3em;
     padding: 0 40px 0 12px;
     display: inline-block;
+}
+
+.defaultTable td a.multiLine {
+    line-height: 1.2em;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .defaultTable--msg td {
@@ -298,6 +307,44 @@ span.messagePreview {
     font-size: 1.4em;
 }
 
-.popover {
-    color: black;
+.meetingActions {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    background: rgba(240, 240, 240, 0.9);
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    -webkit-justify-content: space-between;
+    /* Safari */
+    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.meetingActions a {
+    margin: 0 24px;
+}
+
+a.bigBtn {
+    display: block;
+    background: #fff;
+    border: 2px solid #111;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 8px 32px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+a.bigBtn--dark {
+    background: #222;
+    color: #eee;
+}
+
+a.bigBtn--green {
+    background: #87d42c;
+    border-color: #5c9815;
 }
