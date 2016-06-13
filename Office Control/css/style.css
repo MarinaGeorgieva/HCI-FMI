@@ -130,7 +130,7 @@ a:hover {
 
 #main {
     padding-top: 60px;
-    height: calc(100% - 60px);
+    height: 100%;
     overflow-y: scroll;
     z-index: 2;
 }
