@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Create Meeting/Event</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" xmlns="">
+
+    <link rel="stylesheet" href="lib/bootstrap-3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap-3.2.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="topLine topLine--magenta clear">
+        <div class="topLine__left">
+        <a href="index.html" class="btnBack"><span><</span>&nbsp;Home</a>
+        </div>
+        <div class="topLine__center">
+            Create Meeting/Event
+        </div>
+        <div class="topLine__right">
+            <div class="topLine__icon topLine__icon--globe">
+                <a href="#"><span class="notification">1</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="main" class="bottomFixMeetingsEvents">
+        <form class="leave">
+        	<div class="formGroup">
+	            <input type="text" placeholder="Enter title..." />
+	        </div>
+
+        	<div class="formGroup">
+            	<textarea id="message" placeholder="Enter description..." rows="5" cols="5"></textarea>
+            </div>
+
+        	<div class="formGroup">
+	            <label for="date">Date:</label>
+	            <input type="date" id="date" />
+	        </div>
+
+        	<div class="formGroup time">
+	            <label for="timeStart">From:</label>
+	            <input type="time" id="timeStart" />
+	        </div>
+
+        	<div class="formGroup time">
+	            <label for="timeEnd">To:</label>
+	            <input type="time" id="timeStart" />
+	        </div>
+
+        	<div class="formGroup">
+	            <label for="place">Choose place:</label>
+	            <select id="place">
+	                <option>New Meeting Room</option>
+	                <option>Capital Meeting Room</option>
+	                <option>Skype</option>
+	            </select>
+	        </div>
+
+	        <div class="formGroup">
+	        	<a href="#" class="addPeople">Add People</a>
+	        </div>
+
+            <div class="meetingActions clear" style="margin-left: -12px;">
+                <input type="reset" class="bigBtn bigBtn--dark" value="Reset" />
+                <input type="submit" class="bigBtn bigBtn--magenta" value="Send" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

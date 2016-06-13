@@ -30,27 +30,38 @@
 
     <div id="main" class="bottomFixMeetingsEvents">
         <form class="leave">
-            <select>
-                <option>Paid Leave</option>
-                <option>Unpaid Leave</option>
-                <option>Sick Leave</option>
-                <option>Wedding</option>
-                <option>Blood Donation</option>
-                <option>Death</option>
-            </select>
+            <div class="formGroup">
+                <select>
+                    <option>Paid Leave</option>
+                    <option>Unpaid Leave</option>
+                    <option>Sick Leave</option>
+                    <option>Wedding</option>
+                    <option>Blood Donation</option>
+                    <option>Death</option>
+                </select>
+            </div>
+            
+            <div class="formGroup">
+                <label for="dateStart">From:</label>
+                <input type="date" id="dateStart" />
+            </div>
 
-            <label for="dateStart">From:</label>
-            <input type="date" id="dateStart" />
+            <div class="formGroup">
+                <label for="dateEnd">To:</label>
+                <input type="date" id="dateEnd" />
+            </div>
 
-            <label for="dateEnd">To:</label>
-            <input type="date" id="dateEnd" />
 
-            <label for="message">Message:</label><br />
-            <textarea id="message" placeholder="Enter short message..." rows="5" cols="5"></textarea>
+            <div class="formGroup">
+                <label for="message">Message:</label><br />
+                <textarea id="message" placeholder="Enter short message..." rows="5" cols="5"></textarea>
+            </div>
 
-            <label for="recipient">Send to:</label>
-            <input type="text" id="recipient" value="Manager Name" disabled="disabled" />
-            <span class="vacationLeft">Vacation: 5 days left</span>
+            <div class="formGroup">
+                <label for="recipient">Send to:</label>
+                <input type="text" id="recipient" value="Manager Name" disabled="disabled" />
+                <span class="vacationLeft">Vacation: 5 days left</span>
+            </div>
 
             <div class="meetingActions clear" style="margin-left: -12px;">
                 <input type="reset" class="bigBtn bigBtn--dark" value="Reset" />

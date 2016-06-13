@@ -373,13 +373,13 @@ a.bigBtn--green {
     border-color: #5c9815;
 }
 
-a.bigBtn--magenta {
+a.bigBtn--magenta, input.bigBtn--magenta {
     background: #a01798;
     border-color: #7e0777;
     color: #eee;
 }
 
-a.bigBtn--orange {
+a.bigBtn--orange, input.bigBtn--orange {
     background: #b0600a;
     border-color: #8b4d0a;
     color: #eee;
@@ -395,7 +395,7 @@ form.leave {
 	padding: 12px;
 }
 
-form.leave > input, form.leave select, form.leave textarea {
+.formGroup input, form.leave select, form.leave textarea {
 	display: block;
 	width: 100%;
 	line-height: 28px;
@@ -417,9 +417,26 @@ form.leave input[type="date"] {
 }
 
 form.leave label {
-	margin-top: 10px;
 	font-size: 1.2em;
 }
+
+.formGroup {
+    margin-top: 10px;
+}
+
+.formGroup input[type="time"] {
+    width: 40%;
+}
+
+.formGroup a.addPeople {
+    display: block;
+    background: url("../img/icon-addpeople.png") no-repeat left top;
+    background-size: auto 100%;
+    padding-left: 40px;
+    line-height: 28px;
+    font-weight: bold;
+}
+
 
 form.leave select {
 	min-height: 36px;
