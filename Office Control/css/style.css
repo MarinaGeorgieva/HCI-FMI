@@ -168,23 +168,16 @@ a:hover {
 }
 
 .menu {
-    display: -webkit-flex;
-    /* Safari */
-    display: flex;
-    -webkit-justify-content: space-around;
-    /* Safari */
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 5%;
     height: 100%;
+    text-align: center;
 }
 
 a.menuIcon {
-    display: block;
+    display: inline-block;
     font-weight: bold;
     font-size: 1.2em;
     text-align: center;
-    margin: 5%;
+    margin: 5% 5% 0;
     width: 40%;
     max-width: 128px;
     min-width: 95px;
