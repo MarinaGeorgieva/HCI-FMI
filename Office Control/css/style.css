@@ -345,6 +345,13 @@ span.messagePreview {
     margin: 0 6%;
 }
 
+.meetingActions a:first-child {
+    margin: 0 3% 0 0;
+}
+.meetingActions a:last-child {
+	margin: 0 0 0 3%;
+}
+
 a.bigBtn, input.bigBtn {
     display: block;
     background: #fff;
